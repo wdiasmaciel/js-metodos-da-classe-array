@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html><head><title> pop </title><meta charset = "UTF-8"/>
+<script>
+    var frutas = ["Banana", "Laranja", "Maçã", "Manga"];
+    function imprimirVetor() {
+        document.getElementById ("resp").innerHTML = frutas;
+    }
+   function testarPush() {
+       document.getElementById ("resp").innerHTML = frutas.push ("Kiwi") + "<br/>" + frutas; 
+   }
+</script>
+</head><body onload=“imprimirVetor()">
+
+<p>Clique no botão para inserir um novo elemento no vetor.</p>
+
+<button onclick="testarPush()">Ok</button>
+
+<p id="resp"></p></body></html>

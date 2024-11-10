@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html><head><title> pop </title><meta charset = "UTF-8"/>
+<script>
+function testarPop() {
+    var frutas = ["Banana", "Laranja", "Maçã", "Manga"];
+    var x = document.getElementById ("resp");
+    x.innerHTML = frutas.pop (); //Apresenta Manga na tela.
+}
+</script>
+</head><body>
+
+<p>Clique no botão para remover e retornar o último elemento do vetor.</p>
+
+<button onclick="testarPop()">OK</button>
+
+<p id="resp"></p>
+</body></html>

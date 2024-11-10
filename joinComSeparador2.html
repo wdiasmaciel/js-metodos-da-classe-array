@@ -1,0 +1,20 @@
+join ( sep ): unir os elementos de um vetor em uma string, usando, como separador, o string informado como parâmetro.
+
+<!DOCTYPE html>
+<html><head><title> join </title><meta charset = "UTF-8"/>
+    <script>
+        function testarJoin() {
+            var frutas = ["Banana", "Laranja", "Maçã", "Manga"];
+            var x = document.getElementById ("resp");
+            x.innerHTML = frutas.join(" </br> ");
+        }
+    </script>
+    </head><body>
+
+        <p>Clique no botão para unir os elementos do vetor em uma string.</p>
+        
+        <button onclick="testarJoin()">OK</button>
+        
+        <p id="resp"></p>
+</body></html>
+
