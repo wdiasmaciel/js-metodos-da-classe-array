@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html><head><title> reverse </title><meta charset = "UTF-8"/></head><body>
+<p>Clique no botão para inverter a ordem dos elementos no vetor.</p>
+
+<button onclick="testarReverse()">Ok</button>
+
+<p id="resp"></p>
+
+<script>
+    var frutas = ["Banana", "Laranja", "Maçã", "Manga"];
+    document.getElementById ("resp").innerHTML = frutas;
+
+    function testarReverse() {
+        frutas.reverse ();
+        document.getElementById ("resp").innerHTML += "</br>" + frutas;
+    }
+</script>
+</body> </html>

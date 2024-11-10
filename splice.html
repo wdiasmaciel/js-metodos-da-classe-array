@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> toString </title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <script>
+        var frutas = ["Banana", "Laranja", "Maça", "Manga"];
+        documento.write("</br>" + frutas);
+        frutas.splice(2, 0, "Limão", "Kiwi"); //Adiciona na posição 2, removendo 0 elementos.
+        documento.write("</br>" + frutas); //Banana, Laranja, Limão, Kiwi, Maça, Manga
+
+        var frutas = ["Banana", "Laranja", "Maça", "Manga"];
+        documento.write("</br></br>" + frutas);
+        frutas.splice(2, 1, "Limão", "Kiwi"); //Adiciona na posição 2, removendo 1 elemento.
+        documento.write("</br>" + frutas); //Banana, Laranja, Limão, Kiwi, Manga
+
+        var frutas = ["Banana", "Laranja", "Maça", "Manga"];
+        documento.write("</br></br>" + frutas);
+        frutas.splice(2, 2); //Remove, a partir da posição 2, 2 elementos.
+        documento.write("</br>" + frutas); //Banana, Laranja
+    </script>
+</body>
+
+</html>

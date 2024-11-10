@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html><head><title> shift </title><meta charset = "UTF-8"/></head><body>
+<p>Clique no botão para eliminar o primeiro elemento do vetor.</p>
+
+<button onclick="testarShift()">Ok</button>
+
+<p id="resp"></p>
+
+<script>
+    var frutas = ["Banana", "Laranja", "Maçã", "Manga"];
+    document.getElementById ("resp").innerHTML = frutas;
+    
+    function testarShift() {
+        frutas.shift ();
+        document.getElementById("resp").innerHTML += "</br>" + frutas;
+    }
+</script>
+</body> </html>

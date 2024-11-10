@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html> <head><title> unsfhift </title><meta charset="UTF-8"/></head><body>
+<p>Clique no botão para inserir elementos no início do vetor.</p>
+
+<button onclick="testarUnshift()">Ok</button>
+
+<p id="resp"></p>
+
+<script>
+    var frutas = ["Banana", "Laranja", "Maçã", "Manga"];  
+    document.getElementById ("resp").innerHTML = frutas;
+    
+    function testarUnshift() {
+        frutas.unshift("Limão", "Abacaxi");
+        document.getElementById ("resp").innerHTML += "</br>" + frutas;
+    }
+</script>
+</body> </html>
