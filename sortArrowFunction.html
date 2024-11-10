@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> toString </title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <script>
+        var notas = [40, 100, 1, 5, 25, 10];
+        document.write("</br>" + notas);
+        notas.sort((a, b) => a - b);
+        document.write("</br>" + notas); //100, 40, 25, 10, 5, 1
+
+        var notas = [40, 100, 1, 5, 25, 10];
+        document.write("</br></br>" + notas);
+        notas.sort((a, b) => b - a);
+        document.write("</br>" + notas); //100, 40, 25, 10, 5, 1
+
+        var frutas = ["Manga", "Banana", "Maçã", "Laranja"];
+        document.write("</br></br>" + frutas);
+        frutas.sort();
+        document.write("</br>" + frutas); //Banana,Laranja,Maçã,Manga
+        frutas.reverse();
+        document.write("</br>" + frutas); //Manga,Maçã,Laranja,Banana
+    </script>
+</body>
+
+</html>
