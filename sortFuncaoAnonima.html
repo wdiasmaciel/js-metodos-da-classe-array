@@ -24,6 +24,23 @@
         document.write("</br>" + frutas); //Banana,Laranja,Maçã,Manga
         frutas.reverse();
         document.write("</br>" + frutas); //Manga,Maçã,Laranja,Banana
+
+
+        var pessoas = [{ id: 2, nome: "Bruna" }, { id: 3, nome: "Caio" }, { id: 1, nome: "Ana" }];
+
+        document.write("</br></br>");
+        pessoas.forEach(pessoa =>
+            document.write(`</br> id: ${pessoa.id}, nome: ${pessoa.nome} `));
+
+        pessoas.sort(function (a, b) { return a.id - b.id });
+        document.write("</br>");
+        pessoas.forEach(pessoa =>
+            document.write(`</br> id: ${pessoa.id}, nome: ${pessoa.nome} `));
+
+        pessoas.sort(function (a, b) { return b.id - a.id });
+        document.write("</br>");
+        pessoas.forEach(pessoa =>
+            document.write(`</br> id: ${pessoa.id}, nome: ${pessoa.nome} `));
     </script>
 </body>
 
