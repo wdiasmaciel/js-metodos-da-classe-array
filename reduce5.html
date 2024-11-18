@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+</head>
+
+<body>
+    <script>
+        const pessoas = [
+            { nome: 'Ana', idade: 25 },
+            { nome: 'Bruna', idade: 30 },
+            { nome: 'Carla', idade: 25 },
+            { nome: 'Deise', idade: 30 },
+        ];
+
+        const agrupamentoPorIdade = pessoas.reduce((objeto, pessoa) => {
+            const { idade } = pessoa; //Desestruturação.
+            if (!objeto[idade]) {
+                objeto[idade] = []; // Inicializa um vetor para a idade.
+            }
+            objeto[idade].push(pessoa); // Adiciona a pessoa ao grupo de sua idade.
+            return objeto;
+        }, {});
+
+        console.log(agrupamentoPorIdade);
+        // Saída:
+        // {
+        //   25: [{ nome: 'Ana', idade: 25 }, { nome: 'Carla', idade: 25 }],
+        //   30: [{ nome: 'Bruna', idade: 30 }, { nome: 'Deise', idade: 30 }]
+        // }    
+    </script>
+</body>
+
+</html>

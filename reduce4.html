@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+</head>
+
+<body>
+    <script>
+        const produtos = ['frutas', 'vegetais', 'frutas', 'laticínio', 'frutas', 'vegetais'];
+
+        const contagemPorCategoria = produtos.reduce((objeto, categoria) => {
+            objeto[categoria] = (objeto[categoria] || 0) + 1; // Incrementa ou inicializa com 1.
+            return objeto;
+        }, {}); // Inicia objeto com {} (objeto vazio).
+
+        console.log(contagemPorCategoria);
+        // Saída: { frutas: 3, vegetais: 2, laticínio: 1 } 
+
+    </script>
+</body>
+
+</html>
