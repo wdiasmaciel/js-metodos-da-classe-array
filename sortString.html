@@ -20,7 +20,7 @@
         pessoas.forEach(pessoa =>
             document.write(`<br>id: ${pessoa.id}, nome: ${pessoa.nome} `));
 
-        document.write("<br><br> Ordem Descrescente:");
+        document.write("<br><br> Ordem Decrescente:");
         pessoas.sort((a, b) => b.nome.localeCompare(a.nome));
         pessoas.forEach(pessoa =>
             document.write(`<br>id: ${pessoa.id}, nome: ${pessoa.nome} `));
