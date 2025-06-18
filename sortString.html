@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort - String</title>
+</head>
+
+<body>
+    <script>
+        var pessoas = [{ id: 2, nome: "Bruna" }, { id: 3, nome: "Caio" }, { id: 1, nome: "Ana" }];
+
+        document.write("<br><br> Ordem Original:");
+        pessoas.forEach(pessoa =>
+            document.write(`<br>id: ${pessoa.id}, nome: ${pessoa.nome} `));
+
+        document.write("<br><br> Ordem Crescente:");
+        pessoas.sort((a, b) => a.nome.localeCompare(b.nome));
+        pessoas.forEach(pessoa =>
+            document.write(`<br>id: ${pessoa.id}, nome: ${pessoa.nome} `));
+
+        document.write("<br><br> Ordem Descrescente:");
+        pessoas.sort((a, b) => b.nome.localeCompare(a.nome));
+        pessoas.forEach(pessoa =>
+            document.write(`<br>id: ${pessoa.id}, nome: ${pessoa.nome} `));
+
+    </script>
+</body>
+
+</html>
