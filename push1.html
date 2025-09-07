@@ -10,12 +10,14 @@
             document.getElementById("resp").innerHTML = frutas;
         }
         function testarPush() {
-            document.getElementById("resp").innerHTML = frutas.push("Kiwi") + "<br/>" + frutas;
+            document.getElementById("resp").innerHTML = frutas.push("Kiwi") + 
+                                                        "<br/>" + 
+                                                        imprimirVetor();
         }
     </script>
 </head>
 
-<body onload="imprimirVetor()">
+<body>
 
     <p>Clique no botão para inserir um novo elemento no vetor.</p>
 
